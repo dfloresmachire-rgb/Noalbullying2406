@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio y Proyecto Escolar - Denisse Flores</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fff6f0;
+    color:#4d2f2f;
+}
+
+header{
+    background:linear-gradient(135deg,#f7d6c1,#ffd6e7);
+    padding:25px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    background:#f5c9d6;
+    padding:15px;
+    gap:10px;
+}
+
+nav button{
+    background:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:25px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    transition:0.3s;
+    color:#7b3f3f;
+}
+
+nav button:hover{
+    background:#ffe7ef;
+    transform:scale(1.05);
+}
+
+.tab{
+    display:none;
+    padding:35px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.active{
+    display:block;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom:25px;
+}
+
+h2{
+    margin-bottom:15px;
+    color:#b14f72;
+}
+
+h3{
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+ul,ol{
+    margin-left:25px;
+    line-height:1.8;
+}
+
+p{
+    line-height:1.8;
+    text-align:justify;
+}
+
+img{
+    display:block;
+    margin:20px auto;
+    border-radius:15px;
+    max-width:100%;
+}
+
+.perfil{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #ffd7b8;
+}
+
+.boton{
+    display:inline-block;
+    margin:10px 10px 10px 0;
+    background:#ffd6b0;
+    color:#5e3a1e;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.boton:hover{
+    background:#ffe7cf;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#f5c9d6;
+    margin-top:30px;
+    font-weight:bold;
+}
+
+@media(max-width:700px){
+    header h1{
+        font-size:28px;
+    }
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Denisse Valeria Flores Machire</h1>
+    <p>Diseñadora Gráfica | Proyecto Escolar y Currículum</p>
+</header>
+
+<nav>
+    <button onclick="mostrarTab('inicio')">Inicio</button>
+    <button onclick="mostrarTab('violencia1')">Violencia Escolar</button>
+    <button onclick="mostrarTab('violencia2')">Prevención</button>
+    <button onclick="mostrarTab('violencia3')">Consecuencias</button>
+    <button onclick="mostrarTab('curriculum')">No al Bullying</button>
+    <button onclick="mostrarTab('violencia1')">Violencia Escolar</button>
+    <button onclick="mostrarTab('violencia2')">Prevención</button>
+    <button onclick="mostrarTab('violencia3')">Consecuencias</button>
+</nav>
+
+<!-- INICIO -->
+<section id="inicio" class="tab active">
+    <div class="card">
+        <h2>Bienvenido</h2>
+        <p>
+            Este sitio web reúne información personal, académica y un proyecto escolar sobre la importancia de prevenir la violencia.
+            El objetivo es mostrar de manera organizada y profesional los trabajos realizados durante la preparatoria.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Contenido del sitio</h2>
+        <ul>
+            <li>Currículum personal y académico.</li>
+            <li>Proyecto escolar sobre la violencia y el bullying.</li>
+            <li>Imágenes y contenido educativo.</li>
+            <li>Información organizada en pestañas.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CURRICULUM -->
+<section id="curriculum" class="tab">
+
+    <div class="card">
+        <h2>No al Bullying</h2>
+
+        <p>
+            El bullying es un problema que afecta a millones de estudiantes en todo el mundo. Este tipo de violencia puede presentarse mediante insultos, burlas, amenazas, golpes o incluso por medio de redes sociales.
+        </p>
+
+        <p>
+            Muchas veces las víctimas sienten miedo, tristeza o inseguridad, lo que puede afectar su autoestima, su rendimiento escolar y su salud emocional.
+        </p>
+
+        <img src="imagen1.jpg" width="400">
+    </div>
+
+    <div class="card">
+        <h2>Importancia del respeto</h2>
+
+        <p>
+            Respetar a los demás es una de las mejores maneras de prevenir el bullying. Todas las personas merecen ser tratadas con amabilidad, sin importar su apariencia, gustos o personalidad.
+        </p>
+
+        <p>
+            Crear un ambiente sano dentro de la escuela ayuda a que todos los estudiantes se sientan seguros y felices.
+        </p>
+
+        <img src="imagen2.jpg" width="400">
+    </div>
+
+    <div class="card">
+        <h2>¿Cómo prevenir el bullying?</h2>
+
+        <ul>
+            <li>Practicar el respeto y la empatía.</li>
+            <li>Evitar insultos y burlas.</li>
+            <li>Denunciar situaciones de violencia.</li>
+            <li>Apoyar a las personas que sufren acoso.</li>
+            <li>Resolver problemas mediante el diálogo.</li>
+            <li>Promover la inclusión y la amistad.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Mensaje final</h2>
+
+        <p>
+            Decir “No al bullying” significa construir una escuela más segura, respetuosa y feliz para todos. Cada pequeña acción de amabilidad puede hacer una gran diferencia en la vida de otra persona.
+        </p>
+
+        <img src="imagen3.Webp" width="250">
+    </div>
+</section>
+
+<!-- PAGINA 1 -->
+<section id="violencia1" class="tab">
+
+    <div class="card">
+        <h2>Con violencia no se llega a ningún lugar</h2>
+
+        <h3>¿Por qué la violencia sigue?</h3>
+
+        <p>
+            En México se estima que más de tres millones de niños y adolescentes sufren violencia escolar.
+            Según datos de organizaciones, hasta el 40 % de estudiantes han sido víctimas de acoso y gran parte también han sufrido violencia digital.
+        </p>
+
+        <p>
+            En estudios internacionales, cerca de 1 de cada 3 adolescentes ha sufrido bullying escolar en algún momento de su vida.
+        </p>
+
+        <img src="imagen1.jpg" width="400">
+
+        <a href="imagen1.jpg" class="boton">Agrandar imagen</a>
+    </div>
+
+    <div class="card">
+        <h2>Ayudemos a disminuir la violencia</h2>
+
+        <p>
+            La violencia no es buena porque destruye más de lo que construye. Aunque a veces se presenta como una forma rápida de resolver conflictos, en realidad genera consecuencias profundas y duraderas tanto para quien la ejerce como para quien la recibe.
+        </p>
+
+        <p>
+            No solo causa daño físico, sino también heridas emocionales y psicológicas que pueden acompañar a una persona durante toda su vida.
+        </p>
+
+        <p>
+            Equipos de bienestar escolar y psicólogos pueden ayudar a atender casos de acoso de forma profesional.
+        </p>
+
+        <img src="imagen2.jpg" width="400">
+
+        <a href="imagen2.jpg" class="boton">Agrandar imagen</a>
+    </div>
+</section>
+
+<!-- PAGINA 2 -->
+<section id="violencia2" class="tab">
+
+    <div class="card">
+        <h2>Di no a la violencia</h2>
+
+        <p>
+            “La violencia no es fuerza, es debilidad disfrazada; quien recurre a ella demuestra que ha perdido la capacidad de dialogar, escuchar y construir puentes hacia la paz.”
+        </p>
+
+        <p>
+            Decir no a la violencia es elegir el camino del respeto, la empatía y la convivencia sana.
+        </p>
+
+        <img src="imagen4.jpeg" width="400">
+
+        <a href="imagen4.jpeg" class="boton">Agrandar imagen</a>
+    </div>
+
+    <div class="card">
+        <h2>Acciones para prevenir la violencia</h2>
+
+        <ul>
+            <li>Implementar programas de educación socioemocional.</li>
+            <li>Establecer protocolos de denuncia y actuación.</li>
+            <li>Capacitar docentes para detectar bullying.</li>
+            <li>Promover campañas de respeto y empatía.</li>
+            <li>Fomentar la participación de padres y tutores.</li>
+            <li>Crear espacios seguros para las víctimas.</li>
+            <li>Aplicar sanciones educativas y restaurativas.</li>
+            <li>Impulsar programas de mediación escolar.</li>
+            <li>Supervisar el uso responsable de redes sociales.</li>
+            <li>Ofrecer apoyo psicológico.</li>
+            <li>Organizar talleres y charlas escolares.</li>
+            <li>Promover inclusión y diversidad.</li>
+            <li>Establecer buzones anónimos.</li>
+            <li>Crear comités escolares contra el acoso.</li>
+            <li>Evaluar periódicamente el ambiente escolar.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- PAGINA 3 -->
+<section id="violencia3" class="tab">
+
+    <div class="card">
+        <h2>Consecuencias de la violencia</h2>
+
+        <p>
+            Las consecuencias de la violencia son profundas. Las víctimas pueden experimentar miedo constante, baja autoestima, ansiedad, depresión e incluso dificultades para desarrollarse académica o profesionalmente.
+        </p>
+
+        <p>
+            Promover una cultura de paz implica fomentar el diálogo como principal herramienta para resolver conflictos.
+        </p>
+
+        <p>
+            Decir “No a la violencia” es un compromiso diario que comienza con nuestras palabras y acciones.
+        </p>
+
+        <img src="imagen3.Webp" width="250">
+    </div>
+
+    <div class="card">
+        <h2>¿Cómo ayudar?</h2>
+
+        <ol>
+            <li>Practicar la empatía y el respeto.</li>
+            <li>Resolver conflictos mediante el diálogo.</li>
+            <li>Escuchar antes de juzgar.</li>
+            <li>Defender a quien está siendo agredido.</li>
+            <li>Denunciar situaciones de violencia.</li>
+        </ol>
+    </div>
+</section>
+
+<footer>
+    Página elaborada por Denisse Valeria Flores Machire | Nivel Preparatoria
+</footer>
+
+<script>
+function mostrarTab(id){
+    let tabs = document.querySelectorAll('.tab');
+
+    tabs.forEach(tab => {
+        tab.classList.remove('active');
+    });
+
+    document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
+```
